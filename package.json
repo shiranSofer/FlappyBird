@@ -1,0 +1,24 @@
+{
+  "name": "flappy_bird",
+  "version": "1.0.0",
+  "description": "javaScript home-work",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shiran Sofer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "p5": "^0.8.0",
+    "server": "^1.0.18",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/socket.io": "^2.1.2"
+  }
+}

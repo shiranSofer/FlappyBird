@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Flappy Game</title>
+</head>
+<body>
+<div id="titleDiv">
+    <h1>Flappy Bird game</h1>
+</div>
+<div>
+    <table>
+        <tr>
+            <td width="60%">
+                <div id="canvasDiv">
+                    <div id="characterDiv">
+                        Choose your character<br/>
+                        <button class="characters" id="imgDragonite" onclick="dragonite()">
+                            <img src="images/characters/dragonite/tile000.png"></button>
+                        <button class="characters" id="imgHoppip" onclick="hoppip()">
+                            <img src="images/characters/hoppip/tile000.png"></button>
+                        <button class="characters" id="imgBat" onclick="bat()">
+                            <img src="images/characters/bat/tile000.png"></button>
+                    </div>
+
+                    <canvas id="canvas"></canvas>
+                </div>
+            </td>
+            <td width="40%">
+                <div>
+                    <ul id="events"></ul>
+                </div>
+                <div class="fromDiv">
+                    <form id="playerForm">
+                        <input type="text" id="inputText" placeholder="Enter your name"><br/><br/>
+                        <input type="button" id="ready" value="Ready">
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javaScript/main.js"></script>
+    <script src="javaScript/Environment.js"></script>
+    <script src="javaScript/Player.js"></script>
+    <script src="javaScript/Obstacle.js"></script>
+</body>
+</html>
