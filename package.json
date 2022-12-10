@@ -12,7 +12,7 @@
   "author": "Shiran Sofer",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "p5": "^0.8.0",
     "server": "^1.0.18",
     "socket.io": "^2.2.0"
